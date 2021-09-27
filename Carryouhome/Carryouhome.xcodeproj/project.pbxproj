@@ -22,6 +22,14 @@
 		2B435AB12700A53F0092A1A9 /* MediaInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B435AAF2700A53F0092A1A9 /* MediaInterface.swift */; };
 		2B435AB32700A6020092A1A9 /* ServiceCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B435AB22700A6020092A1A9 /* ServiceCenter.swift */; };
 		2B435AB42700A6020092A1A9 /* ServiceCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B435AB22700A6020092A1A9 /* ServiceCenter.swift */; };
+		2B588A672701B76C003C762E /* CircleBubbleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A662701B76C003C762E /* CircleBubbleList.swift */; };
+		2B588A682701B76C003C762E /* CircleBubbleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A662701B76C003C762E /* CircleBubbleList.swift */; };
+		2B588A6A2701B851003C762E /* BubbleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A692701B851003C762E /* BubbleModel.swift */; };
+		2B588A6B2701B851003C762E /* BubbleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A692701B851003C762E /* BubbleModel.swift */; };
+		2B588A6D2701D72A003C762E /* BubbleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A6C2701D72A003C762E /* BubbleTableView.swift */; };
+		2B588A6E2701D72A003C762E /* BubbleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A6C2701D72A003C762E /* BubbleTableView.swift */; };
+		2BA8004A2701FB5300008D1C /* BubbleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA800492701FB5300008D1C /* BubbleList.swift */; };
+		2BA8004B2701FB5300008D1C /* BubbleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA800492701FB5300008D1C /* BubbleList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +68,10 @@
 		2B435AA82700A1BB0092A1A9 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		2B435AAF2700A53F0092A1A9 /* MediaInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaInterface.swift; sourceTree = "<group>"; };
 		2B435AB22700A6020092A1A9 /* ServiceCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCenter.swift; sourceTree = "<group>"; };
+		2B588A662701B76C003C762E /* CircleBubbleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBubbleList.swift; sourceTree = "<group>"; };
+		2B588A692701B851003C762E /* BubbleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleModel.swift; sourceTree = "<group>"; };
+		2B588A6C2701D72A003C762E /* BubbleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTableView.swift; sourceTree = "<group>"; };
+		2BA800492701FB5300008D1C /* BubbleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +312,7 @@
 		2B435AAC2700A4790092A1A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2B588A692701B851003C762E /* BubbleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,6 +327,9 @@
 		2B435AAE2700A4860092A1A9 /* Impl */ = {
 			isa = PBXGroup;
 			children = (
+				2B588A662701B76C003C762E /* CircleBubbleList.swift */,
+				2B588A6C2701D72A003C762E /* BubbleTableView.swift */,
+				2BA800492701FB5300008D1C /* BubbleList.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -476,10 +492,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B435AB32700A6020092A1A9 /* ServiceCenter.swift in Sources */,
+				2B588A6A2701B851003C762E /* BubbleModel.swift in Sources */,
 				2B43558E27007D1B0092A1A9 /* ContentView.swift in Sources */,
+				2BA8004A2701FB5300008D1C /* BubbleList.swift in Sources */,
 				2B435AA92700A1BB0092A1A9 /* Services.swift in Sources */,
+				2B588A672701B76C003C762E /* CircleBubbleList.swift in Sources */,
 				2B4355A72700826F0092A1A9 /* VideoPlayView.swift in Sources */,
 				2B435AB02700A53F0092A1A9 /* MediaInterface.swift in Sources */,
+				2B588A6D2701D72A003C762E /* BubbleTableView.swift in Sources */,
 				2B43558C27007D1B0092A1A9 /* CarryouhomeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,10 +509,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B435AB12700A53F0092A1A9 /* MediaInterface.swift in Sources */,
+				2B588A682701B76C003C762E /* CircleBubbleList.swift in Sources */,
 				2B43558F27007D1B0092A1A9 /* ContentView.swift in Sources */,
 				2B435AB42700A6020092A1A9 /* ServiceCenter.swift in Sources */,
+				2BA8004B2701FB5300008D1C /* BubbleList.swift in Sources */,
+				2B588A6B2701B851003C762E /* BubbleModel.swift in Sources */,
 				2B435AAA2700A1BB0092A1A9 /* Services.swift in Sources */,
 				2B43558D27007D1B0092A1A9 /* CarryouhomeApp.swift in Sources */,
+				2B588A6E2701D72A003C762E /* BubbleTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
