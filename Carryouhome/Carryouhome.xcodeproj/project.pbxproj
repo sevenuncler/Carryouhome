@@ -15,6 +15,13 @@
 		2B43558F27007D1B0092A1A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B43556427007D170092A1A9 /* ContentView.swift */; };
 		2B43559027007D1B0092A1A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B43556527007D1A0092A1A9 /* Assets.xcassets */; };
 		2B43559127007D1B0092A1A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B43556527007D1A0092A1A9 /* Assets.xcassets */; };
+		2B4355A72700826F0092A1A9 /* VideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4355A62700826F0092A1A9 /* VideoPlayView.swift */; };
+		2B435AA92700A1BB0092A1A9 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B435AA82700A1BB0092A1A9 /* Services.swift */; };
+		2B435AAA2700A1BB0092A1A9 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B435AA82700A1BB0092A1A9 /* Services.swift */; };
+		2B435AB02700A53F0092A1A9 /* MediaInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B435AAF2700A53F0092A1A9 /* MediaInterface.swift */; };
+		2B435AB12700A53F0092A1A9 /* MediaInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B435AAF2700A53F0092A1A9 /* MediaInterface.swift */; };
+		2B435AB32700A6020092A1A9 /* ServiceCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B435AB22700A6020092A1A9 /* ServiceCenter.swift */; };
+		2B435AB42700A6020092A1A9 /* ServiceCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B435AB22700A6020092A1A9 /* ServiceCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,10 @@
 		2B43558527007D1B0092A1A9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B43558927007D1B0092A1A9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		2B43558B27007D1B0092A1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4355A62700826F0092A1A9 /* VideoPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayView.swift; sourceTree = "<group>"; };
+		2B435AA82700A1BB0092A1A9 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		2B435AAF2700A53F0092A1A9 /* MediaInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaInterface.swift; sourceTree = "<group>"; };
+		2B435AB22700A6020092A1A9 /* ServiceCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +109,15 @@
 		2B43556227007D170092A1A9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2B435AA02700A07D0092A1A9 /* Core */,
+				2B435A9F2700A0750092A1A9 /* Foundation */,
+				2B435A9E2700A0680092A1A9 /* Login */,
+				2B4355A5270080E30092A1A9 /* Main */,
+				2B4355A4270080D60092A1A9 /* Profile */,
+				2B4355A3270080CD0092A1A9 /* Inbox */,
+				2B4355A2270080C60092A1A9 /* Publish */,
+				2B4355A1270080BC0092A1A9 /* Discover */,
+				2B4355A0270080B00092A1A9 /* Home */,
 				2B43556327007D170092A1A9 /* CarryouhomeApp.swift */,
 				2B43556427007D170092A1A9 /* ContentView.swift */,
 				2B43556527007D1A0092A1A9 /* Assets.xcassets */,
@@ -149,6 +169,153 @@
 				2B43558B27007D1B0092A1A9 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		2B4355A0270080B00092A1A9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2B435AAE2700A4860092A1A9 /* Impl */,
+				2B435AAD2700A4800092A1A9 /* Core */,
+				2B435AAC2700A4790092A1A9 /* Model */,
+				2B435AAB2700A4720092A1A9 /* Interface */,
+				2B4355A62700826F0092A1A9 /* VideoPlayView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2B4355A1270080BC0092A1A9 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2B4355A2270080C60092A1A9 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		2B4355A3270080CD0092A1A9 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		2B4355A4270080D60092A1A9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2B4355A5270080E30092A1A9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2B435A9E2700A0680092A1A9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2B435A9F2700A0750092A1A9 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2B435AA62700A1270092A1A9 /* DB */,
+				2B435AA52700A11E0092A1A9 /* Track */,
+				2B435AA42700A1180092A1A9 /* Network */,
+				2B435AA32700A1130092A1A9 /* Log */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		2B435AA02700A07D0092A1A9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B435AA72700A1580092A1A9 /* Services */,
+				2B435AA12700A0920092A1A9 /* ServiceCenter */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B435AA12700A0920092A1A9 /* ServiceCenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B435AB22700A6020092A1A9 /* ServiceCenter.swift */,
+			);
+			path = ServiceCenter;
+			sourceTree = "<group>";
+		};
+		2B435AA32700A1130092A1A9 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		2B435AA42700A1180092A1A9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2B435AA52700A11E0092A1A9 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		2B435AA62700A1270092A1A9 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		2B435AA72700A1580092A1A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B435AA82700A1BB0092A1A9 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B435AAB2700A4720092A1A9 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2B435AAF2700A53F0092A1A9 /* MediaInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2B435AAC2700A4790092A1A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B435AAD2700A4800092A1A9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B435AAE2700A4860092A1A9 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Impl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +475,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B435AB32700A6020092A1A9 /* ServiceCenter.swift in Sources */,
 				2B43558E27007D1B0092A1A9 /* ContentView.swift in Sources */,
+				2B435AA92700A1BB0092A1A9 /* Services.swift in Sources */,
+				2B4355A72700826F0092A1A9 /* VideoPlayView.swift in Sources */,
+				2B435AB02700A53F0092A1A9 /* MediaInterface.swift in Sources */,
 				2B43558C27007D1B0092A1A9 /* CarryouhomeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +488,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B435AB12700A53F0092A1A9 /* MediaInterface.swift in Sources */,
 				2B43558F27007D1B0092A1A9 /* ContentView.swift in Sources */,
+				2B435AB42700A6020092A1A9 /* ServiceCenter.swift in Sources */,
+				2B435AAA2700A1BB0092A1A9 /* Services.swift in Sources */,
 				2B43558D27007D1B0092A1A9 /* CarryouhomeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
