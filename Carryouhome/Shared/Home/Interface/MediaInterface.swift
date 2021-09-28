@@ -9,7 +9,7 @@ import Foundation
 
 
 struct MediaInterface: ServiceProtocol {
-     func doAction(action: Any, params: Any) -> Any {
+    func doAction(action: Any, params: Any) -> Any {
         return ""
     }
     
