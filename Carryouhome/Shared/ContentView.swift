@@ -16,10 +16,10 @@ struct ContentView: View {
                 Text("Home")
             }
 
-            Text("Discover")
+            MatchView()
                 .tabItem {
                     Image(systemName: "star.fill")
-                    Text("Two")
+                    Text("Discover")
                 }
             
             Text("P")

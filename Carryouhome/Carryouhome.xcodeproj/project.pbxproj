@@ -30,6 +30,13 @@
 		2B588A6E2701D72A003C762E /* BubbleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A6C2701D72A003C762E /* BubbleTableView.swift */; };
 		2BA8004A2701FB5300008D1C /* BubbleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA800492701FB5300008D1C /* BubbleList.swift */; };
 		2BA8004B2701FB5300008D1C /* BubbleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA800492701FB5300008D1C /* BubbleList.swift */; };
+		2BB380B12706B0CE00DFA1B5 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB380B02706B0CE00DFA1B5 /* SlideViewController.swift */; };
+		2BB380B22706B0CE00DFA1B5 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB380B02706B0CE00DFA1B5 /* SlideViewController.swift */; };
+		2BB380B72706B10800DFA1B5 /* SlideStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB380B62706B10800DFA1B5 /* SlideStore.swift */; };
+		2BB380B82706B10800DFA1B5 /* SlideStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB380B62706B10800DFA1B5 /* SlideStore.swift */; };
+		2BB380BA2706B12100DFA1B5 /* SlideViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB380B92706B12100DFA1B5 /* SlideViewCell.swift */; };
+		2BB380BB2706B12100DFA1B5 /* SlideViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB380B92706B12100DFA1B5 /* SlideViewCell.swift */; };
+		2BB3AB7B272574F6009CE0FB /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3AB7A272574F6009CE0FB /* MatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,10 @@
 		2B588A692701B851003C762E /* BubbleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleModel.swift; sourceTree = "<group>"; };
 		2B588A6C2701D72A003C762E /* BubbleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTableView.swift; sourceTree = "<group>"; };
 		2BA800492701FB5300008D1C /* BubbleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleList.swift; sourceTree = "<group>"; };
+		2BB380B02706B0CE00DFA1B5 /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
+		2BB380B62706B10800DFA1B5 /* SlideStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideStore.swift; sourceTree = "<group>"; };
+		2BB380B92706B12100DFA1B5 /* SlideViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewCell.swift; sourceTree = "<group>"; };
+		2BB3AB7A272574F6009CE0FB /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,15 +132,10 @@
 		2B43556227007D170092A1A9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				2B435AA02700A07D0092A1A9 /* Core */,
+				2B7F05C727522E1600A9081D /* Configs */,
 				2B435A9F2700A0750092A1A9 /* Foundation */,
-				2B435A9E2700A0680092A1A9 /* Login */,
-				2B4355A5270080E30092A1A9 /* Main */,
-				2B4355A4270080D60092A1A9 /* Profile */,
-				2B4355A3270080CD0092A1A9 /* Inbox */,
-				2B4355A2270080C60092A1A9 /* Publish */,
-				2B4355A1270080BC0092A1A9 /* Discover */,
-				2B4355A0270080B00092A1A9 /* Home */,
+				2B7F05C627522DC500A9081D /* BasicServices */,
+				2B7F05C327522D1D00A9081D /* AdvanceServices */,
 				2B43556327007D170092A1A9 /* CarryouhomeApp.swift */,
 				2B43556427007D170092A1A9 /* ContentView.swift */,
 				2B43556527007D1A0092A1A9 /* Assets.xcassets */,
@@ -240,7 +246,9 @@
 		2B435A9F2700A0750092A1A9 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				2B435AA62700A1270092A1A9 /* DB */,
+				2B7F05C527522D8E00A9081D /* DI */,
+				2B7F05C427522D4C00A9081D /* UI */,
+				2B435AA62700A1270092A1A9 /* Storage */,
 				2B435AA52700A11E0092A1A9 /* Track */,
 				2B435AA42700A1180092A1A9 /* Network */,
 				2B435AA32700A1130092A1A9 /* Log */,
@@ -286,11 +294,11 @@
 			path = Track;
 			sourceTree = "<group>";
 		};
-		2B435AA62700A1270092A1A9 /* DB */ = {
+		2B435AA62700A1270092A1A9 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = DB;
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		2B435AA72700A1580092A1A9 /* Services */ = {
@@ -332,6 +340,101 @@
 				2BA800492701FB5300008D1C /* BubbleList.swift */,
 			);
 			path = Impl;
+			sourceTree = "<group>";
+		};
+		2B7F05C327522D1D00A9081D /* AdvanceServices */ = {
+			isa = PBXGroup;
+			children = (
+				2B4355A0270080B00092A1A9 /* Home */,
+				2B4355A1270080BC0092A1A9 /* Discover */,
+				2B4355A2270080C60092A1A9 /* Publish */,
+				2B4355A3270080CD0092A1A9 /* Inbox */,
+				2B4355A4270080D60092A1A9 /* Profile */,
+				2B4355A5270080E30092A1A9 /* Main */,
+				2B435A9E2700A0680092A1A9 /* Login */,
+				2B435AA02700A07D0092A1A9 /* Core */,
+				2BB380AE2706B08E00DFA1B5 /* Common */,
+				2BB3AB79272571B1009CE0FB /* Match */,
+			);
+			path = AdvanceServices;
+			sourceTree = "<group>";
+		};
+		2B7F05C427522D4C00A9081D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2B7F05C527522D8E00A9081D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		2B7F05C627522DC500A9081D /* BasicServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BasicServices;
+			sourceTree = "<group>";
+		};
+		2B7F05C727522E1600A9081D /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		2BB380AE2706B08E00DFA1B5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2BB380AF2706B09A00DFA1B5 /* SlideViewController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2BB380AF2706B09A00DFA1B5 /* SlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2BB380B52706B0EA00DFA1B5 /* Api */,
+				2BB380B42706B0E500DFA1B5 /* View */,
+				2BB380B32706B0DB00DFA1B5 /* Store */,
+				2BB380B02706B0CE00DFA1B5 /* SlideViewController.swift */,
+			);
+			path = SlideViewController;
+			sourceTree = "<group>";
+		};
+		2BB380B32706B0DB00DFA1B5 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2BB380B62706B10800DFA1B5 /* SlideStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2BB380B42706B0E500DFA1B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BB380B92706B12100DFA1B5 /* SlideViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BB380B52706B0EA00DFA1B5 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		2BB3AB79272571B1009CE0FB /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				2BB3AB7A272574F6009CE0FB /* MatchView.swift */,
+			);
+			path = Match;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,10 +595,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B435AB32700A6020092A1A9 /* ServiceCenter.swift in Sources */,
+				2BB380B72706B10800DFA1B5 /* SlideStore.swift in Sources */,
 				2B588A6A2701B851003C762E /* BubbleModel.swift in Sources */,
+				2BB380B12706B0CE00DFA1B5 /* SlideViewController.swift in Sources */,
+				2BB3AB7B272574F6009CE0FB /* MatchView.swift in Sources */,
 				2B43558E27007D1B0092A1A9 /* ContentView.swift in Sources */,
 				2BA8004A2701FB5300008D1C /* BubbleList.swift in Sources */,
 				2B435AA92700A1BB0092A1A9 /* Services.swift in Sources */,
+				2BB380BA2706B12100DFA1B5 /* SlideViewCell.swift in Sources */,
 				2B588A672701B76C003C762E /* CircleBubbleList.swift in Sources */,
 				2B4355A72700826F0092A1A9 /* VideoPlayView.swift in Sources */,
 				2B435AB02700A53F0092A1A9 /* MediaInterface.swift in Sources */,
@@ -510,10 +617,13 @@
 			files = (
 				2B435AB12700A53F0092A1A9 /* MediaInterface.swift in Sources */,
 				2B588A682701B76C003C762E /* CircleBubbleList.swift in Sources */,
+				2BB380BB2706B12100DFA1B5 /* SlideViewCell.swift in Sources */,
 				2B43558F27007D1B0092A1A9 /* ContentView.swift in Sources */,
 				2B435AB42700A6020092A1A9 /* ServiceCenter.swift in Sources */,
 				2BA8004B2701FB5300008D1C /* BubbleList.swift in Sources */,
 				2B588A6B2701B851003C762E /* BubbleModel.swift in Sources */,
+				2BB380B22706B0CE00DFA1B5 /* SlideViewController.swift in Sources */,
+				2BB380B82706B10800DFA1B5 /* SlideStore.swift in Sources */,
 				2B435AAA2700A1BB0092A1A9 /* Services.swift in Sources */,
 				2B43558D27007D1B0092A1A9 /* CarryouhomeApp.swift in Sources */,
 				2B588A6E2701D72A003C762E /* BubbleTableView.swift in Sources */,

@@ -12,7 +12,6 @@ import SwiftUI
 struct BubbleList: UIViewRepresentable {
     typealias UIViewType = UIView
     @Binding var bubbles: [BubbleModel]
-    
 
     func makeCoordinator() -> BubbleListCoordinator {
         return BubbleListCoordinator(bubbles: $bubbles)
