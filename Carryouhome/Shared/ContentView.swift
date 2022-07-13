@@ -10,34 +10,34 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            VideoPlayView()
+            MetaPageView()
             .tabItem {
                 Image(systemName: "star")
-                Text("Home")
+                Text("M")
             }
 
             MatchView()
                 .tabItem {
                     Image(systemName: "star.fill")
-                    Text("Discover")
+                    Text("探索")
                 }
             
             Text("P")
                 .tabItem  {
                 Image(systemName: "star.fill")
-                Text("Publish")
+                Text("发布")
             }
             
             Text("Inbox")
                 .tabItem  {
                 Image(systemName: "star.fill")
-                Text("Inbox")
+                Text("消息")
             }
             
             Text("Profile")
                 .tabItem  {
                 Image(systemName: "star.fill")
-                Text("Profile")
+                Text("我")
             }
         }
     }

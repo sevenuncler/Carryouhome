@@ -28,6 +28,8 @@
 		2B588A6B2701B851003C762E /* BubbleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A692701B851003C762E /* BubbleModel.swift */; };
 		2B588A6D2701D72A003C762E /* BubbleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A6C2701D72A003C762E /* BubbleTableView.swift */; };
 		2B588A6E2701D72A003C762E /* BubbleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B588A6C2701D72A003C762E /* BubbleTableView.swift */; };
+		2B7F05CC2752332000A9081D /* MetaPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F05CB2752332000A9081D /* MetaPageView.swift */; };
+		2B7F05CD2752332000A9081D /* MetaPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F05CB2752332000A9081D /* MetaPageView.swift */; };
 		2BA8004A2701FB5300008D1C /* BubbleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA800492701FB5300008D1C /* BubbleList.swift */; };
 		2BA8004B2701FB5300008D1C /* BubbleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA800492701FB5300008D1C /* BubbleList.swift */; };
 		2BB380B12706B0CE00DFA1B5 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB380B02706B0CE00DFA1B5 /* SlideViewController.swift */; };
@@ -78,6 +80,7 @@
 		2B588A662701B76C003C762E /* CircleBubbleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBubbleList.swift; sourceTree = "<group>"; };
 		2B588A692701B851003C762E /* BubbleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleModel.swift; sourceTree = "<group>"; };
 		2B588A6C2701D72A003C762E /* BubbleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTableView.swift; sourceTree = "<group>"; };
+		2B7F05CB2752332000A9081D /* MetaPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaPageView.swift; sourceTree = "<group>"; };
 		2BA800492701FB5300008D1C /* BubbleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleList.swift; sourceTree = "<group>"; };
 		2BB380B02706B0CE00DFA1B5 /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 		2BB380B62706B10800DFA1B5 /* SlideStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideStore.swift; sourceTree = "<group>"; };
@@ -345,6 +348,7 @@
 		2B7F05C327522D1D00A9081D /* AdvanceServices */ = {
 			isa = PBXGroup;
 			children = (
+				2B7F05C8275232C900A9081D /* Meta */,
 				2B4355A0270080B00092A1A9 /* Home */,
 				2B4355A1270080BC0092A1A9 /* Discover */,
 				2B4355A2270080C60092A1A9 /* Publish */,
@@ -385,6 +389,30 @@
 			children = (
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		2B7F05C8275232C900A9081D /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F05CA275232F300A9081D /* Model */,
+				2B7F05C9275232EC00A9081D /* View */,
+			);
+			path = Meta;
+			sourceTree = "<group>";
+		};
+		2B7F05C9275232EC00A9081D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F05CB2752332000A9081D /* MetaPageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B7F05CA275232F300A9081D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2BB380AE2706B08E00DFA1B5 /* Common */ = {
@@ -606,6 +634,7 @@
 				2B588A672701B76C003C762E /* CircleBubbleList.swift in Sources */,
 				2B4355A72700826F0092A1A9 /* VideoPlayView.swift in Sources */,
 				2B435AB02700A53F0092A1A9 /* MediaInterface.swift in Sources */,
+				2B7F05CC2752332000A9081D /* MetaPageView.swift in Sources */,
 				2B588A6D2701D72A003C762E /* BubbleTableView.swift in Sources */,
 				2B43558C27007D1B0092A1A9 /* CarryouhomeApp.swift in Sources */,
 			);
@@ -616,6 +645,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B435AB12700A53F0092A1A9 /* MediaInterface.swift in Sources */,
+				2B7F05CD2752332000A9081D /* MetaPageView.swift in Sources */,
 				2B588A682701B76C003C762E /* CircleBubbleList.swift in Sources */,
 				2BB380BB2706B12100DFA1B5 /* SlideViewCell.swift in Sources */,
 				2B43558F27007D1B0092A1A9 /* ContentView.swift in Sources */,
